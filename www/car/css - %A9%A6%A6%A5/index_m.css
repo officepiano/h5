@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+
+body, html {
+    background: #000;
+}
+
+
+@-webkit-keyframes slogan_btn_start{
+    0%,100% {-webkit-transform: scale(1); -webkit-filter: brightness(1);}
+    50% {-webkit-transform: scale(1.02); -webkit-filter: brightness(1.25);}
+}
+.scene_index .arr_pre{
+    width: 3rem;
+    height: 6rem;
+    left: 0;
+    top: 50%;
+    margin-top: -3rem;
+    background-image: url("../assets/icon_arr_1.png");
+    background-size: 5rem;
+    background-position: 1rem center;
+}
+.scene_index .arr_next{
+    width: 3rem;
+    height: 6rem;
+    right: 0;
+    top: 50%;
+    margin-top: -3rem;
+    background-image: url("../assets/icon_arr_1.png");
+    background-size: 5rem;
+    background-position: -3rem center;
+}
+/*scene_index*/
+
+
+
+/*scene_game*/
+.scene_wrap .scene_game {
+    background-size: 100%;
+    -webkit-perspective: 80px;
+    -webkit-perspective-origin: 50% 41.5%;
+}
+
+.scene_wrap .scene_game .road_container {
+    left: 50%;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+}
+.scene_wrap .scene_game .road_container .road{
+    width: 512px;
+    height: 250px;
+    margin-left: -256px;
+    margin-top: 0px;
+    background-size: 100% 25px;
+    background-repeat: repeat-y;
+    left: 0%;
+    top: 150px;
+    -webkit-transform: rotateX(90deg) translateY(-1920px) scaleX(2) scaleY(16);
+    -webkit-transform-origin: 50% 0%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 1s;
+}
+.scene_wrap .scene_game .road_container .road.road_1{
+    -webkit-animation-name: road_1;
+}
+@-webkit-keyframes road_1{
+    0%{-webkit-transform: rotateX(90deg) translateY(-3920px) scaleX(2) scaleY(16);}
+    100% {-webkit-transform: rotateX(90deg) translateY(-3120px) scaleX(2) scaleY(16);}
+}
+.scene_wrap .scene_game .road_container .fence_1{
+    background-repeat: repeat-x;
+    background-size: 50px 150px;
+    width: 250px;
+    height: 150px;
+    margin-left: 0px;
+    margin-top: 0px;
+    top: -450px;
+    left: -512px;
+    -webkit-transform: rotateY(-90deg) translateX(-3920px) scaleX(16) scaleY(4);
+    -webkit-transform-origin: 0% 0%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: fence_1;
+}
+.scene_wrap .scene_game .road_container .fence_2{
+    background-repeat: repeat-x;
+    background-size: 50px 150px;
+    width: 250px;
+    height: 150px;
+    margin-left: 0px;
+    margin-top: 0px;
+    top: -450px;
+    left: 512px;
+    -webkit-transform: rotateY(-90deg) translateX(-3920px) scaleX(16) scaleY(4);
+    -webkit-transform-origin: 0% 0%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: fence_1;
+}
+@-webkit-keyframes fence_1{
+    0%{-webkit-transform: rotateY(-90deg) translateX(-3920px) scaleX(16) scaleY(4);}
+    100% {-webkit-transform: rotateY(-90deg) translateX(-3120px) scaleX(16) scaleY(4);}
+}
+
+
+
+
+
+/*game2*/
+.scene_wrap .game2 {
+    background-image: url('../assets/LD/car_bicycle_bg1.jpg');
+}
+.scene_wrap .game2 .road_container .road{
+    background-image: url('../assets/LD/water_bg.jpg');
+    -webkit-transition: background-image 2s ease-in-out;
+}
+.scene_wrap .game2 .road_container .fence_1{
+    background-image: url('../assets/LD/water_side.png');
+    background-size: 50px 100px;
+    height: 100px;
+    top: -250px;
+    -webkit-transition: background-image 2s ease-in-out;
+}
+.scene_wrap .game2 .road_container .fence_2{
+    background-image: url('../assets/LD/water_side.png');
+    background-size: 50px 100px;
+    height: 100px;
+    top: -250px;
+    -webkit-transition: background-image 2s ease-in-out;
+}
+.scene_wrap .game2 .road_container.mud .road{
+    background-image: url('../assets/LD/mud_bg.jpg');
+}
+.scene_wrap .game2 .road_container.mud .fence_1{
+    background-image: url('../assets/LD/mud_side.png');
+    background-size: 50px 100px;
+    height: 100px;
+    top: -250px;
+}
+.scene_wrap .game2 .road_container.mud .fence_2{
+    background-image: url('../assets/LD/mud_side.png');
+    background-size: 50px 100px;
+    height: 100px;
+    top: -250px;
+}
+
+
+/*game2*/
+

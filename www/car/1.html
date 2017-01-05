@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title> </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    	*{margin: 0;padding: 0}
+
+    	.box{width: 3920px;background: #000;height: 500px;}
+    	.side1{
+    		position: absolute;
+    		background-image: url(mud_side.png);
+		    background-repeat: repeat-x;
+		    background-size: 50px 150px;
+		    width: 250px;
+		    height: 150px;
+		   
+		    transform:   scaleX(16) scaleY(4);
+		   	-webkit-transform-origin : 0 0 ;
+		}
+
+		.scene_wrap .scene_game .road_container .fence_1{
+			background-image: url(mud_side.png);
+		    background-repeat: repeat-x;
+		    background-size: 50px 150px;
+		    width: 250px;
+		    height: 150px;
+		    margin-left: 0px;
+		    margin-top: 0px;
+		    top: -450px;
+		    left: -512px;
+		    -webkit-transform: rotateY(-90deg) translateX(-3920px) scaleX(16) scaleY(4);
+		    -webkit-transform-origin: 0% 0%;
+		    -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-timing-function: linear;
+		    -webkit-animation-duration: 1s;
+		    -webkit-animation-name: fence_1;
+		}
+		.scene_wrap .scene_game .road_container .fence_2{
+		    background-repeat: repeat-x;
+		    background-size: 50px 150px;
+		    width: 250px;
+		    height: 150px;
+		    margin-left: 0px;
+		    margin-top: 0px;
+		    top: -450px;
+		    left: 512px;
+		    -webkit-transform: rotateY(-90deg) translateX(-3920px) scaleX(16) scaleY(4);
+		    -webkit-transform-origin: 0% 0%;
+		    -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-timing-function: linear;
+		    -webkit-animation-duration: 1s;
+		    -webkit-animation-name: fence_1;
+		}
+		@-webkit-keyframes fence_1{
+		    0%{-webkit-transform: rotateY(-90deg) translateX(-3920px) scaleX(16) scaleY(4);}
+		    100% {-webkit-transform: rotateY(-90deg) translateX(-3120px) scaleX(16) scaleY(4);}
+		}
+		
+    </style>
+</head>
+
+<body>
+   <div class="box">
+   		<div class="fence_1"></div>
+   </div>
+</body>
+
+</html>

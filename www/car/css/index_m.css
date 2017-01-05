@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+
+body, html {
+    background: #000;
+}
+
+
+
+
+/*scene_game*/
+.scene_wrap .scene_game {
+    background-size: 100%;
+    -webkit-perspective: 80px;
+    -webkit-perspective-origin: 50% 41.5%;
+}
+
+
+
+.scene_wrap .scene_game .road_container .fence_2{
+    background-repeat: repeat-x;
+    background-size: 50px 150px;
+    width: 250px;
+    height: 150px;
+    margin-left: 0px;
+    margin-top: 0px;
+    top: -450px;
+    left: 512px;
+    -webkit-transform: rotateY(-90deg) translateX(-3920px) scaleX(16) scaleY(4);
+    -webkit-transform-origin: 0% 0%;
+    /*-webkit-animation-iteration-count: 0;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 1s;*/
+    /*-webkit-animation-name: fence_1;*/
+}
+@-webkit-keyframes fence_1{
+    0%{-webkit-transform: rotateY(-90deg) translateX(-3920px) scaleX(16) scaleY(4);}
+    100% {-webkit-transform: rotateY(-90deg) translateX(-3120px) scaleX(16) scaleY(4);}
+}
+
+
+
+
+
+
+.scene_wrap .game2 .road_container.mud .fence_2{
+    /*background-image: url('../assets/LD/mud_side.png');*/
+    background: #fff;
+    /*background-size: 50px 100px;*/
+    height: 100px;
+    top: -250px;
+}
+
+
+/*game2*/
+
