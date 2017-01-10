@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title> </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    	*{margin: 0;padding: 0}
+
+    	.box {
+    		
+    		width: 100px;
+    		height: 100px;
+    		margin: 50px auto;
+
+    		
+    		position: relative;
+    		transform-style: preserve-3d;
+
+    		animation:test 5s infinite;
+    	}
+
+
+    	@keyframes test
+		{
+				from {transform:rotateY(0deg) rotateX(0deg)}
+				to {transform:rotateY(180deg) rotateX(90deg)}
+		}
+
+    	.b{ 
+    			width: 200px;
+    			height: 200px;
+    			position: absolute;
+    			left: 0;
+    			top: 0;
+    	}
+    	/*right*/
+    	.b1{ 
+    			background: #c00;
+    			transform:rotateY(90deg) translateZ(100px);
+    	}
+    	/*back*/
+    	.b2{ 
+    			background: #ccc;
+    			transform:rotateY(180deg) translateZ(100px);
+    	}
+    	/*left*/
+    	.b3{ 
+    			background: #000;
+    			transform:rotateY(270deg) translateZ(100px);
+    	}
+    	/*font*/
+    	.b4{ 
+    			background: #69c;
+    			transform:rotateY(0) translateZ(100px);
+    	}
+    	/*top*/
+    	.b5{ 
+    			background: #ffff00;
+    			transform:rotateX(90deg) translateZ(100px);
+    	}
+    	/*bottom*/
+    	.b6{ 
+    			background: green;
+    			transform:rotateX(-90deg) translateZ(100px);
+    	}
+    	.wrap {
+			perspective: 800px;
+			
+		}
+    </style>
+</head>
+
+<body>
+<div class="wrap">
+  <div class="box">
+  		<div class="b b1"></div>
+  		<div class="b b2"></div>
+  		<div class="b b3"></div>
+  		<div class="b b4"></div>
+  		<div class="b b5"></div>
+  		<div class="b b6"></div>
+  </div>
+  </div>
+</body>
+</html>
